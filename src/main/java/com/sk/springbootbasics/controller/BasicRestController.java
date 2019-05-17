@@ -10,11 +10,33 @@ public class BasicRestController {
 
 	
 	
-	@RequestMapping(name="/test" ,method=RequestMethod.GET)
-	public @ResponseBody String getEchoTest(){
+	@RequestMapping(name="/getRequest" ,method=RequestMethod.GET)
+	public @ResponseBody String getRequest(){
 		
-		return "Application Started and working properly";
+		return "Hi.. This is Get Request Response";
 	}
+	
+	
+	@RequestMapping(name="/postRequest" ,method=RequestMethod.POST)
+	public @ResponseBody String PostRequest(){
+		
+		return "Hi.. This is Post Request Response";
+	}
+	
+	
+	@RequestMapping(name="/putRequest" ,method=RequestMethod.PUT)
+	public @ResponseBody String putRequest(){
+		
+		return "Hi.. This is Put Request Response";
+	}
+	
+	
+	@RequestMapping(name="/deleteRequest" ,method=RequestMethod.DELETE)
+	public @ResponseBody String deleteRequest(){
+		
+		return "Hi.. This is Delete Request Response";
+	}
+	
 	
 	
 }
